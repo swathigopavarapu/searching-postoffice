@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post Office Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Left Section -->
+    <div class="left-panel">
+      <h2>Post Office Application</h2>
+      <p>This Application allows you to extract information about the nearest Post Offices, based on your location.</p>
+      <img src="https://undraw.co/api/illustrations/63c79f2d-014d-4606-bf2a-cac9fa70dc5d" alt="Postman Illustration">
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-panel">
+      <div id="beforeClick">
+        <p>Your Current IP Address is <span id="ip">Loading...</span></p>
+        <button id="getStarted">Get Started</button>
+      </div>
+
+      <div id="afterClick" class="hidden">
+        <h3>IP Details</h3>
+        <p><strong>IP Address:</strong> <span id="ip2"></span></p>
+        <p><strong>Lat:</strong> <span id="lat"></span> | <strong>Lon:</strong> <span id="lon"></span></p>
+        <p><strong>City:</strong> <span id="city"></span> | <strong>Region:</strong> <span id="region"></span></p>
+        <p><strong>Organisation:</strong> <span id="org"></span></p>
+        <p><strong>Hostname:</strong> <span id="hostname"></span></p>
+
+        <h3>Your Current Location</h3>
+        <div id="map"></div>
+
+        <h3>More Information About You</h3>
+        <p><strong>Timezone:</strong> <span id="timezone"></span></p>
+        <p><strong>Date & Time:</strong> <span id="datetime"></span></p>
+        <p><strong>Pincode:</strong> <span id="pincode"></span></p>
+        <p><strong>Message:</strong> Number of Post Offices Found: <span id="msg"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
